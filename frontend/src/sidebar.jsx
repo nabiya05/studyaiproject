@@ -8,7 +8,7 @@ export default  function Sidebar(){
 
     const getallthreads = async () =>{
         try{
-           const response = await fetch("http://localhost:8080/api/thread");
+           const response = await fetch("https://studyaiproject.onrender.com/api/thread");
            const res = await response.json();
            const data = res?.map(thread=> ({threadid: thread.threadid, title: thread.title}));
            //console.log(data);
@@ -33,7 +33,7 @@ export default  function Sidebar(){
     const getchats = async (newthreadid)=>{
         setCurthreadid(newthreadid);
         try{
-            const response = await fetch(`http://localhost:8080/api/thread/${newthreadid}`);
+            const response = await fetch(`https://studyaiproject.onrender.com/api/thread/${newthreadid}`);
             const res = await response.json();
             console.log(res);
             setPrevchat(res);
@@ -44,7 +44,7 @@ export default  function Sidebar(){
 
     const deletethread = async(deletethreadid)=>{
         try{
-            const response = await fetch(`http://localhost:8080/api/thread/${deletethreadid}`, {method: "DELETE"});
+            const response = await fetch(`https://studyaiproject.onrender.com/api/thread/${deletethreadid}`, {method: "DELETE"});
             const res = await response.json();
             console.log(res)
 
