@@ -1,0 +1,12 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    color: #ececec;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.app{
+    background-color: #121212;
+    display: flex;
+}

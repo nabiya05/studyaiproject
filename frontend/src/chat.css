@@ -1,0 +1,43 @@
+.chats{
+    max-width: 65%;
+    padding: 8rem;
+    overflow-y: scroll;
+    direction: ltr; 
+    width: 65%;
+}
+.my-scrollable-div {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+/* WebKit browsers */
+.chats::-webkit-scrollbar {
+  width: 12px;
+}
+
+.chats::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+.chats::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #323232, #323232);
+  border-radius: 10px;
+}
+
+
+.userdiv{
+    display: flex;
+    justify-content: flex-end;
+}
+.usermsg{
+    background-color: #323232;
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-left: 15rem;
+}
+.gptdiv{
+    text-align: left;
+    font-size: 0.9rem;
+    max-width: 500px;
+}
